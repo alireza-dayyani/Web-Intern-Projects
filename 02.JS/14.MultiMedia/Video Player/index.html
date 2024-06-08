@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliRezaTube&#128077;</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="video-panel">
+        <div class="panel-background"></div>
+        <video src="videos/1-1080p.mp4"></video>
+        <div class="tools">
+            <div class="slider"><input type="range" min="0" step="0.01" value="0" autocomplete="off"></div>
+            <div class="actions">
+                <i class="bi bi-play-fill actor" title="Play"></i>
+                <i class="bi bi-pause-fill actor" title="Pause"></i>
+                <i class="bi bi-stop-fill actor" title="Stop"></i>
+                <i class="bi bi-rewind-fill actor" title="Rewind"></i>
+                <i class="bi bi-fast-forward-fill actor" title="Jump"></i>
+                <select title="Speed">
+                    <option class="speed-options" value="0.5">0.5</option>
+                    <option class="speed-options" value="0.5">0.75</option>
+                    <option class="speed-options" value="1" selected>1</option>
+                    <option class="speed-options" value="1">1.25</option>
+                    <option class="speed-options" value="2">1.5</option>
+                </select>
+                <select title="Quality">
+                    <option class="quality-options" value="1080" selected>1080</option>
+                    <option class="quality-options" value="720">720</option>
+                    <option class="quality-options" value="640">640</option>
+                </select>
+                <div class="volume">
+                    <i class="bi bi-volume-up-fill volume-icon"></i>
+                    <div class="volume-range-container volume-slider-deactive">
+                        <input type="range" orient="vertical" min="0" max="1" step="0.01" value="100" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more-container">
+        <div class="more-click"><img class="clickbait" src="images/2.jpg">
+            <p class="clickbait_title">Raiders of the Lost Ark</p>
+        </div>
+        <div class="more-click"><img class="clickbait" src="images/3.jpg">
+            <p class="clickbait_title">Annahilation</p>
+        </div>
+        <div class="more-click"><img class="clickbait" src="images/4.jpg">
+            <p class="clickbait_title">Love, Death & Robots</p>
+        </div>
+    </div>
+    <p id="video-title">Video Source : Solo Leveling</p>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

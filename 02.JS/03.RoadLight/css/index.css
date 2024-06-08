@@ -1,0 +1,32 @@
+.light-holder {
+    width: 200px;
+    height: 400px;
+    background-color: silver
+}
+
+.light{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.leg {
+    width: 50px;
+    height: 250px;
+}
+
+.leg-button {
+    font-family: sans-serif;
+    font-size: 11px;
+}

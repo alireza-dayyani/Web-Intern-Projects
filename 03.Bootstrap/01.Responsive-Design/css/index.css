@@ -1,0 +1,33 @@
+@media all and (min-width:768px) and (max-width:991px) {
+    .img-items {
+        position: relative;
+    }
+
+    .text-items {
+        position: absolute;
+        color: white;
+        z-index: 1;
+    }
+
+    #text2 {
+        transform: translateY(60vw);
+    }
+
+    #text3 {
+        transform: translateY(115vw);
+    }
+
+    #text4 {
+        transform: translateY(170vw);
+    }
+}
+
+@media all and (min-width:1200px) {
+    p{
+        text-align: justify;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}

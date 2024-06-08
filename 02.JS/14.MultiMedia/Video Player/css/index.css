@@ -1,0 +1,180 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.video-panel {
+    position: relative;
+    top: 50px;
+    left: 70px;
+    width: 1000px;
+}
+
+.panel-background {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 300ms ease 0s;
+}
+
+video {
+    display: block;
+    border: 3px solid rgb(200, 200, 200);
+    box-shadow: 2px 2px 2px black, -2px -2px 2px black;
+    width: 100%;
+}
+
+.tools {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease 0s;
+}
+
+.slider>input {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-panel:hover .tools {
+    transform: scaleY(1);
+    opacity: 100;
+}
+
+.video-panel:hover .panel-background {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 25%, transparent 80%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.tools:hover {
+    transform: scaleY(1);
+    opacity: 100;
+}
+
+.actions {
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actions>i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.actions>i:hover {
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.actions>select {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions>select>option {
+    color: black;
+    cursor: pointer;
+}
+
+.volume {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.volume:hover {
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.volume>div {
+    position: absolute;
+    background-color: rgb(190, 190, 190);
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100px;
+    transform-origin: bottom;
+    transition: all 300ms ease 0s;
+}
+
+.volume-slider-deactive {
+    transform: translate(-11px, -160px) scaleY(0);
+    opacity: 0;
+}
+
+.volume-slider-active {
+    transform: translate(-11px, -160px) scaleY(1);
+    opacity: 100;
+}
+
+.volume>div>input {
+    position: absolute;
+    height: 100px;
+}
+
+#video-title {
+    margin-top: 80px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: sans-serif
+}
+
+.more-container {
+    position: absolute;
+    display: block;
+    right: 60px;
+    top: 60px;
+}
+
+.more-container>div {
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 300ms ease 0s;
+}
+
+.more-container>div:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.more-container>div:first-of-type {
+    margin-top: 0;
+}
+
+.more-container>div>p {
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+img {
+    width: 250px;
+}

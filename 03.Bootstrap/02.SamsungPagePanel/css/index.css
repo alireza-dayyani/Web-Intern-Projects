@@ -1,0 +1,150 @@
+@media all and (max-width:575px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(3vw);
+    }
+
+    .mobile-fix {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-fix div {
+        padding: 8px;
+    }
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(3vw);
+    }
+
+    .mobile-fix {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-fix div {
+        padding: 8px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(0.8vw + 1px);
+    }
+
+    .mobile-fix div {
+        margin-bottom: 4px;
+    }
+
+    .img-parent:hover .image {
+        transform: scale(1.1);
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(1vw + 2px);
+    }
+
+    .mobile-fix div {
+        margin-bottom: 4px;
+    }
+
+    .img-parent:hover .image {
+        transform: scale(1.1);
+    }
+}
+
+@media all and (min-width:1200px) and (max-width:1399px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(1vw + 2px);
+    }
+
+    .mobile-fix div {
+        margin-bottom: 4px;
+    }
+
+    .img-parent:hover .image {
+        transform: scale(1.1);
+    }
+}
+
+@media all and (min-width:1400px) {
+
+    h4,
+    span,
+    button {
+        font-size: calc(1vw + 2px);
+    }
+
+    .mobile-fix div {
+        margin-bottom: 4px;
+    }
+
+    .img-parent:hover .image {
+        transform: scale(1.1);
+    }
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.content {
+    bottom: -20px;
+}
+
+.content span {
+    transition: all 400ms ease 0s;
+}
+
+.img-parent {
+    padding: 0;
+}
+
+img {
+    transition: all 400ms ease 0s;
+}
+
+.buy-button {
+    width: 90px;
+    opacity: 0;
+    transition: all 400ms ease 0s;
+}
+
+.img-parent:hover .content span {
+    transform: translateY(-15px);
+    opacity: 0;
+}
+
+.img-parent:hover .buy-button {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+
+
+/* .new p{
+    font-size: 12px;
+    background-color: rgb(101, 101, 245);
+    position: absolute;
+    left: 20px;
+    transform: translateY(-470px);
+    width: 30px;
+} */

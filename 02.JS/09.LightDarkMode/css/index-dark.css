@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.button-container {
+    border-color: white;
+}
+
+.button {
+    background-color: white;
+}
+.button>i{
+    color: black;
+}
+table {
+    border-color: white;
+}
+
+h1,
+p,
+tr,
+th,
+td {
+    color: white;
+    border-color: white;
+}
